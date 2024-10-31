@@ -1,0 +1,225 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+
+    background-color: #ECFFF6;
+}
+
+.newexslider-contant{
+    margin-left: 0px;
+    margin-top: 100px;
+}
+.newex-titleHader h2{
+    font-family: 'Syne', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 54px;
+    color: #081845;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 110px;
+}
+.newex-titleHader h5{
+    margin-top: 30px;
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #455273;
+    text-align: center;
+}
+.newex-project-name h2{ 
+    font-family: 'Syne', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 54px;
+    color: #081845;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+/* .newex-contant{
+    margin-left: 40px;
+} */
+.newexslider-contant .img {
+    height: 460px;
+    position: relative;
+    border-radius: 40px;
+}
+
+.newexslider-contant .img img{
+    height: 100% ;
+    position: relative;
+    border-radius: 40px;
+    border: 10px solid #fff;
+}
+.newexslider-contant .img:after {
+    content: '';
+    position: absolute;
+    background: #08184563;
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    border-radius: 40px;
+    transition: .35s ease-in-out;
+}
+
+.newexslider-contant .img:hover:after {
+    height: 100%;
+    top: 0;
+}
+
+.newex-title h2{
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: #081845;
+    font-family: 'Syne', sans-serif;
+}
+.newex-title-link h5{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #081845;
+    font-family: 'Syne', sans-serif;
+}
+
+.newexslider-contant .owl-nav {
+    text-align: right;
+    position: absolute;
+    right: 30px;
+    bottom: 615px;
+    transition: 0.3s !important;
+}
+.newexslider-contant .owl-nav button.owl-prev{
+    margin-right: 20px;
+    transition: 0.3s ease !important;
+}
+.newexslider-contant .owl-nav button.owl-next{
+    margin-left: 20px;
+    transition: 0.3s ease !important;
+} 
+
+.newexslider-contant button.owl-next::after {
+    content: url('../img/hoverarrow.png');
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -50px;
+    transition: 1s ease !important;
+    opacity: 0;
+    
+}
+.newexslider-contant button.owl-next:hover:after {  
+    opacity: 1;
+    
+}
+
+.newexslider-contant button.owl-prev::after {
+    content: url('../img/hoverleft.png');
+    position: absolute;
+    margin-top: -21px;
+    margin-left: -50px;
+    transition: 1s ease !important;
+    opacity: 0;
+}
+
+.newexslider-contant button.owl-prev:hover:after {
+    opacity: 1;
+}
+
+.owl-nav.disabled {
+    display: block !important;
+}
+
+
+ /* For mobile phones: */
+
+ @media only screen and (max-width: 600px) {
+   .newexContainer{
+    background-color: #ECFFF6;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    margin: auto;
+    }
+    .newexslider-contant{
+        margin-left: 0px 0px;
+    }
+    .newex-contant{
+        margin-left: 0px;
+    }
+    .main-newex-title h2{
+        font-family: 'Syne', sans-serif;
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 34px;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 60px;
+    }
+
+    .newexslider-contant .img {
+        height: 320px;
+    }
+    .newex-titleHader h5{
+        margin-top: 15px;
+        font-family: 'Syne', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        text-align: center;
+        padding: 0px 50px;
+    }
+    .newex-project-name h2 {
+        font-family: 'Syne', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 30px;
+        color: #081845;
+        text-align: center;
+        margin-bottom: 80px;
+        margin-top: 20px;
+        margin-left: auto;
+    }
+    .newexslider-contant .owl-nav {
+        text-align: right;
+        position: absolute;
+        right: 5px;
+        bottom: 450px;
+    }
+    .newexslider-contant button.owl-prev:hover:after {
+    
+        display: none;
+    }
+    .newexslider-contant button.owl-next:hover:after {
+
+        display: none;
+    }
+
+    .newex-title h2 {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        color: #081845;
+        font-family: 'Syne', sans-serif;
+    }
+
+    .newexslider-contant .owl-item.cloned {
+    width: 534px;
+        margin-right: -8px;
+    }
+
+    .newex-title-link h5{
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        color: #081845;
+        font-family: 'Syne', sans-serif;
+    }
+
+
+}
